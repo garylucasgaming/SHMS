@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class Hero : MonoBehaviour {
 
+    //Hero information
     private int level, experience;
 
+    //List of powers - to be used for missions
     private List<string> Powers;
 
-    private bool onDuty = false;
-
+    //Hero information - will be gen'd
     private string name, age, gender;
 
+    //Full constructor
     public Hero(int level, int experience, string name, string age, string gender, List<string> powers)
     {
         this.level = level;
@@ -19,7 +21,12 @@ public class Hero : MonoBehaviour {
         this.name = name;
         this.age = age;
         this.gender = gender;
-        Powers = Powers;
+        Powers = powers;
     }
-    
+
+    //Default constructor
+    public Hero()
+    {
+
+    }
 }

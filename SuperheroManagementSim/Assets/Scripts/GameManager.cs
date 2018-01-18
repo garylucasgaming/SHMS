@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour {
     private int money;
     private enum GameState {MainMenu, Options, Game };
     private SaveManager saveManager;
+    private Dictionary<Mission, Hero[]> masterMissionCollection;
 
     //singleton
     public static GameManager instance = null;
@@ -42,6 +43,8 @@ public class GameManager : MonoBehaviour {
         //initialize game through scenemanager
 
     }
+
+
 
 
 }
