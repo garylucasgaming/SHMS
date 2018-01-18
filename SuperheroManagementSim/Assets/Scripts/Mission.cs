@@ -8,9 +8,9 @@ public class Mission : MonoBehaviour {
 
     private readonly int CompletionTime;
 
-    private List<int> Rewards;
-
     private readonly int HeroCapacity;
+
+    private List<int> Rewards;
 
     public string Name { get; set; }
     public string Description { get; set; }
